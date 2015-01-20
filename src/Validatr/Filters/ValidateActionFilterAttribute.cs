@@ -7,7 +7,7 @@ namespace Validatr.Filters
     /// <summary>
     /// Represents an action filter that serialzes the model state of the current context and sends it in response to the client.
     /// </summary>
-    public class ValidatrActionFilterAttribute : ActionFilterAttribute
+    public class ValidateActionFilterAttribute : ActionFilterAttribute
     {
         /// <inheritdoc />
         public override void OnActionExecuting(ActionExecutingContext filterContext)

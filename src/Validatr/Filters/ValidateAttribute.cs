@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using System;
+using System.Web.Mvc;
 using Newtonsoft.Json;
 using Validatr.Configuration;
 
@@ -8,7 +9,8 @@ namespace Validatr.Filters
     /// Replaces the response of the current action with a JSON 
     /// representation of the model state when it's invalid.
     /// </summary>
-    public class ValidateActionFilterAttribute : ActionFilterAttribute
+    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method, AllowMultiple = false, Inherited = true)]
+    public class ValidateAttribute : ActionFilterAttribute
     {
         /// <inheritdoc />
         public override void OnActionExecuting(ActionExecutingContext filterContext)

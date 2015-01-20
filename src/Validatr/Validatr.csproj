@@ -73,7 +73,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Configuration\ValidatrConfig.cs" />
-    <Compile Include="Filters\ValidateActionFilterAttribute.cs" />
+    <Compile Include="Filters\ValidateAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

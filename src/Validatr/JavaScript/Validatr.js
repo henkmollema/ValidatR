@@ -8,6 +8,10 @@
         /// </summary>
         /// <param name="validatrOptions" type="Object">An object containing the configuration for Validatr.</param>
 
+        if (!validatrOptions) {
+            return;
+        }
+
         if (validatrOptions["summarySelector"]) {
             this.summarySelector = validatrOptions["summarySelector"];
         }

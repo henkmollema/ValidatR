@@ -5,7 +5,8 @@ using Validatr.Configuration;
 namespace Validatr.Filters
 {
     /// <summary>
-    /// Represents an action filter that serialzes the model state of the current context and sends it in response to the client.
+    /// Replaces the response of the current action with a JSON 
+    /// representation of the model state when it's invalid.
     /// </summary>
     public class ValidateActionFilterAttribute : ActionFilterAttribute
     {

@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 namespace Validatr.Configuration
 {
     /// <summary>
-    /// Provides configugration for Validatr.
+    /// Provides configuration for Validatr.
     /// </summary>
     public static class ValidatrConfig
     {
